@@ -252,6 +252,11 @@
     btop
     openssl
     rustc
+    # "perl5.38.2-App-vidir"
+    nodejs
+    python3Full
+    qemu
+    virt-manager
   ];
 
   fonts.packages = with pkgs; [
