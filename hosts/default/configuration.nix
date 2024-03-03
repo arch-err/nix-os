@@ -70,7 +70,7 @@
       signcolumn = "yes";
       # isfname:append("@-@");
       updatetime = 50;
-      colorcolumn = "80";
+      # colorcolumn = "80";
 #
       mouse = "a";
       completeopt = "menuone,noselect";
