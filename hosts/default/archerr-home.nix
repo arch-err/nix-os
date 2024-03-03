@@ -69,7 +69,26 @@
   #  /etc/profiles/per-user/archerr/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    BROWSER="floorp";
+    SEC_BROWSER="firefox";
+    
+    EDITOR="nvim";
+    SEC_EDITOR="nvim";
+    # SEC_EDITOR="codium";
+    
+    IMG_VIEWER="nsxiv";
+    VID_PLAYER="nsxiv";
+    AUDIO_PLAYER="nsxiv";
+    
+    TERMINAL="kitty";
+    SEC_TERMINAL="alacritty";
+    
+    MENU="rofi";
+    # MENU_TUI="bemenu";
+    PAGER="less";
+    
+    NOTES="obsidian";
+
   };
 
   # Let Home Manager install and manage itself.
