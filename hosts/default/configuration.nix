@@ -25,7 +25,13 @@
   programs.nixvim = {
     enable = true;
 
-    colorschemes.nord.enable = true;
+    colorschemes.nord = {
+      enable = true;
+      extraConfig = {
+        disable_background = true;
+        enable_sidebar_background = true;
+      };
+    };
 
     clipboard.providers.wl-copy.enable = true;
     clipboard.register = "unnamedplus";
