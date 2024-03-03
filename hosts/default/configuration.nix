@@ -230,7 +230,9 @@
   environment.systemPackages = with pkgs; [
     vim
     file
-    killall
+    psmisc # killall, pstree, and some more
+    swww
+    wlogout
     plymouth
     breeze-plymouth
     pulseaudio
