@@ -119,7 +119,16 @@
       noice.enable = true;
       rainbow-delimiters.enable = true;
       nvim-tree.enable = true;
-      telescope.enable = true;
+      telescope = {
+        enable = true;
+        keymaps = {
+          "<C-p>" = {
+            action = "git_files";
+            desc = "Telescope Git Files";
+          };
+          "<leader>f" = "live_grep";
+        };
+      };
       oil.enable = true;
       treesitter.enable = true;
       luasnip.enable = true;
