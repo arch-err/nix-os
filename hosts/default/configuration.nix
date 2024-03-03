@@ -135,6 +135,7 @@
     zathura
     prettyping
     btop
+    openssl
   ];
 
   fonts.packages = with pkgs; [ 
