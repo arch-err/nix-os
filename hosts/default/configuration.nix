@@ -110,7 +110,6 @@
     xfce.thunar
     rofi
     kitty
-    neovim
     git
     alejandra
     duf
