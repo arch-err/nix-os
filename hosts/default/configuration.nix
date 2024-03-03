@@ -8,6 +8,7 @@
   inputs,
   ...
 }: {
+
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -39,26 +40,25 @@
     clipboard.register = "unnamedplus";
     globals.mapleader = " "; # Sets the leader key to comma
 
-    # Configure neovim options...
     options = {
       guicursor = "";
-
+#
       title = true;
       titlestring = "neovim";
-      
+#      
       nu = true;
       relativenumber = false;
-      
+#      
       tabstop = 4;
       softtabstop = 4;
       shiftwidth = 4;
       expandtab = true;
-      
+#
       smartindent = true;
-      
+#
       wrap = true;
       showcmd = false;
-      
+#
       swapfile = false;
       backup = false;
       #undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir";
@@ -71,7 +71,7 @@
       # isfname:append("@-@");
       updatetime = 50;
       colorcolumn = "80";
-
+#
       mouse = "a";
       completeopt = "menuone,noselect";
     };
@@ -139,7 +139,6 @@
           {name = "path";}
           {name = "buffer";}
         ];
-
         mapping = {
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<Tab>" = {
@@ -178,7 +177,6 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "sv_SE.UTF-8";
     LC_IDENTIFICATION = "sv_SE.UTF-8";
@@ -213,21 +211,16 @@
     };
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  hacking-tools.enable = true;
-
-  # Enable automatic login for the user.
-  # services.getty.autologinUser = "archerr";
   main-user.enable = true;
   main-user.userName = "archerr";
+
+  hacking-tools.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
     plymouth
@@ -300,8 +293,6 @@
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
   security.sudo.wheelNeedsPassword = false;
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -317,13 +308,13 @@
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
-  # Open ports in the firewall.
+  # Firewall
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   networking.firewall.enable = false;
 
-  # Configure network proxy if necessary
+  # Proxy
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
