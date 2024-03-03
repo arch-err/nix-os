@@ -2,7 +2,7 @@
 
 
 HOST="default"
-EDITOR=vim
+# EDITOR=vim
 
 set -e
 #pushd "~/.os/hosts/$HOST/"

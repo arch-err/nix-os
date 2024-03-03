@@ -28,6 +28,9 @@
     plugins = {
       lualine.enable = true;
     };
+    clipboard.providers.wl-copy.enable = true;
+    clipboard.register = "unnamedplus";
+
   };
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
