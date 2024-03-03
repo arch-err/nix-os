@@ -82,6 +82,19 @@
     #   "<esc>" = { action = ":noh<CR>"; silent = true; };
     # };
 
+    autoCmd = [
+      {
+          event = "BufWinLeave";
+          pattern = "*.*";
+          command = "mkview";
+      }
+      {
+          event = "BufWinEnter";
+          pattern = "*.*";
+          command = "silent! loadview";
+      }
+    ];
+
     plugins = {
       # lualine.enable = true;
       auto-save.enable = true;
