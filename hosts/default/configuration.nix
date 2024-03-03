@@ -25,7 +25,7 @@
   programs.nixvim = {
     enable = true;
 
-    colorschemes.gruvbox.enable = true;
+    colorschemes.nord.enable = true;
 
     clipboard.providers.wl-copy.enable = true;
     clipboard.register = "unnamedplus";
