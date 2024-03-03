@@ -121,6 +121,7 @@
     kitty
     neovim
     git
+    alejandra
   ];
 
   fonts.packages = with pkgs; [ 
