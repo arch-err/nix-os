@@ -11,6 +11,7 @@
       ./hacking-tools.nix
       ./main-user.nix
       inputs.home-manager.nixosModules.default
+      inputs.nixvim.nixosModules.nixvim
     ];
 
 
@@ -20,6 +21,11 @@
   boot.initrd.systemd.enable = true;
   boot.plymouth.enable = true;
   boot.plymouth.theme = "bgrt";
+
+  programs.nixvim = {
+    enable = true;
+    colorschemes.gruvbox.enable = true;
+  };
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true;
