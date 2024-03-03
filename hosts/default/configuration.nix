@@ -46,6 +46,7 @@
     plugins = {
       # lualine.enable = true;
       auto-save.enable = true;
+      commentary.enable = true;
       telescope.enable = true;
       oil.enable = true;
       treesitter.enable = true;
