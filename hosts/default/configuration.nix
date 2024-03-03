@@ -23,7 +23,7 @@
   boot.plymouth.theme = "bgrt";
 
   programs.nixvim = {
-    enable = true;
+    enable = false;
     colorschemes.gruvbox.enable = true;
     plugins = {
       lualine.enable = true;

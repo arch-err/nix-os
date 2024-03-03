@@ -24,7 +24,6 @@ in
       extraGroups = [ "wheel" "video" "audio" ]; # Enable ‘sudo’ for the user.
       shell = pkgs.zsh;
       packages = with pkgs; [
-        neovim
         floorp
         steam
         obsidian
