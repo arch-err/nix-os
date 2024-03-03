@@ -122,11 +122,8 @@
       telescope = {
         enable = true;
         keymaps = {
-          "<C-p>" = {
-            action = "git_files";
-            desc = "Telescope Git Files";
-          };
-          "<leader>f" = "live_grep";
+          "<leader>f" = "find_files";
+          "<leader>g" = "live_grep";
         };
       };
       oil.enable = true;
