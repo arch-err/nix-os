@@ -136,6 +136,7 @@
     prettyping
     btop
     openssl
+    rustc
   ];
 
   fonts.packages = with pkgs; [ 
