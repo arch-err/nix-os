@@ -32,7 +32,7 @@
 
     # Configure neovim options...
     options = {
-      numbers = true;
+      # numbers = true;
       relativenumber = true;
       incsearch = true;
     };
