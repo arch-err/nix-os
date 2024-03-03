@@ -53,6 +53,12 @@
       # lualine.enable = true;
       auto-save.enable = true;
       commentary.enable = true;
+      surround.enable = true;
+      nvim-autopairs.enable = true;
+      which-key.enable = true;
+      noice.enable = true;
+      rainbow-delimiters.enable = true;
+      nvim-tree.enable = true;
       telescope.enable = true;
       oil.enable = true;
       treesitter.enable = true;
