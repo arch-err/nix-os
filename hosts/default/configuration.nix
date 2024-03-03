@@ -30,7 +30,7 @@
 
     colorschemes.nord = {
       enable = true;
-      extraConfig = {
+      settings = {
         disable_background = true;
         enable_sidebar_background = true;
       };
@@ -77,6 +77,18 @@
     };
 
     keymaps = [
+      {
+        mode = "n";
+        key = "<C-'>";
+        options.silent = true;
+        action = "\"vyiw:%s/v/v/g<Left><Left>";
+      }
+      {
+        mode = "v";
+        key = "<C-'>";
+        options.silent = true;
+        action = "\"vyiw:%s/v/v/g<Left><Left>";
+      }
       {
         mode = "n";
         key = "<leader>z";
