@@ -1,28 +1,97 @@
-activating the configuration...
-setting up /etc...
-reloading user units for archerr...
-restarting sysinit-reactivation.target
-reloading the following units: dbus.service
-restarting the following units: polkit.service
-h.drv
-  /nix/store/wj1qlm0i0vjjjlzy6dsdhyqxzqs3w98w-dbus-1.drv
-  /nix/store/qzszcl1ysa3k5c6zzs80h15l2x7s4bbb-X-Restart-Triggers-dbus.drv
-  /nix/store/7550205x1ygiy86z3ldp7mc679q67xy1-unit-dbus.service.drv
-  /nix/store/gdrcqh4sxkk7crdhj6f6bm6z6iwh5j8c-unit-dbus.service.drv
-  /nix/store/i9q2ij94csxbmbr0p2bspya77245igqg-X-Restart-Triggers-polkit.drv
-  /nix/store/mg0dwlj795vfh0nr0zcqfqcq1xa4cvvj-unit-polkit.service.drv
-  /nix/store/gyydiq6sv5h9djlqkg4m460i71gpk5za-system-units.drv
-  /nix/store/lqfav6lciqlfnw8cqdb4vmqzqskgcz71-user-units.drv
-  /nix/store/ry1m6k9xybr2qa78qh98nmh2xvvz7089-etc.drv
-  /nix/store/vc8ldjx2yainj37hly3rb0qpg8xmjfwr-nixos-system-zpctr-24.05.20240229.1536926.drv
-building '/nix/store/jccfd5h0217kh2wpdcpc8rl3nn5lpp2z-system-path.drv'...
-building '/nix/store/i9q2ij94csxbmbr0p2bspya77245igqg-X-Restart-Triggers-polkit.drv'...
-building '/nix/store/wj1qlm0i0vjjjlzy6dsdhyqxzqs3w98w-dbus-1.drv'...
-building '/nix/store/mg0dwlj795vfh0nr0zcqfqcq1xa4cvvj-unit-polkit.service.drv'...
-building '/nix/store/qzszcl1ysa3k5c6zzs80h15l2x7s4bbb-X-Restart-Triggers-dbus.drv'...
-building '/nix/store/7550205x1ygiy86z3ldp7mc679q67xy1-unit-dbus.service.drv'...
-building '/nix/store/gdrcqh4sxkk7crdhj6f6bm6z6iwh5j8c-unit-dbus.service.drv'...
-building '/nix/store/lqfav6lciqlfnw8cqdb4vmqzqskgcz71-user-units.drv'...
-building '/nix/store/gyydiq6sv5h9djlqkg4m460i71gpk5za-system-units.drv'...
-building '/nix/store/ry1m6k9xybr2qa78qh98nmh2xvvz7089-etc.drv'...
-building '/nix/store/vc8ldjx2yainj37hly3rb0qpg8xmjfwr-nixos-system-zpctr-24.05.20240229.1536926.drv'...
+warning: Git tree '/etc/nixos/nix-os' is dirty
+warning: updating lock file '/etc/nixos/nix-os/flake.lock':
+• Updated input 'nixvim':
+    'github:nix-community/nixvim/64d3996bd0c6aece450a25a7a06b7dae50cb5431' (2024-03-03)
+  → 'github:arch-err/nixvim/045d2d64ac967b3e8cd9cef6d4928bb70abb1099' (2024-03-03)
+• Removed input 'nixvim/devshell'
+• Removed input 'nixvim/devshell/flake-utils'
+• Removed input 'nixvim/devshell/flake-utils/systems'
+• Removed input 'nixvim/devshell/nixpkgs'
+• Removed input 'nixvim/flake-compat'
+• Updated input 'nixvim/flake-parts/nixpkgs-lib':
+    follows 'nixvim/nixpkgs'
+  → 'github:NixOS/nixpkgs/1536926ef5621b09bba54035ae2bb6d806d72ac8?dir=lib' (2024-02-29)
+• Removed input 'nixvim/home-manager'
+• Removed input 'nixvim/home-manager/nixpkgs'
+• Removed input 'nixvim/nix-darwin'
+• Removed input 'nixvim/nix-darwin/nixpkgs'
+• Added input 'nixvim/nixvim':
+    'github:nix-community/nixvim/64d3996bd0c6aece450a25a7a06b7dae50cb5431' (2024-03-03)
+• Added input 'nixvim/nixvim/devshell':
+    'github:numtide/devshell/5ddecd67edbd568ebe0a55905273e56cc82aabe3' (2024-02-26)
+• Added input 'nixvim/nixvim/devshell/flake-utils':
+    'github:numtide/flake-utils/4022d587cbbfd70fe950c1e2083a02621806a725' (2023-12-04)
+• Added input 'nixvim/nixvim/devshell/flake-utils/systems':
+    'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e' (2023-04-09)
+• Added input 'nixvim/nixvim/devshell/nixpkgs':
+    follows 'nixvim/nixvim/nixpkgs'
+• Added input 'nixvim/nixvim/flake-compat':
+    'https://api.flakehub.com/f/pinned/edolstra/flake-compat/1.0.1/018afb31-abd1-7bff-a5e4-cff7e18efb7a/source.tar.gz?narHash=sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U%3D' (2023-10-04)
+• Added input 'nixvim/nixvim/flake-parts':
+    'github:hercules-ci/flake-parts/b253292d9c0a5ead9bc98c4e9a26c6312e27d69f' (2024-02-01)
+• Added input 'nixvim/nixvim/flake-parts/nixpkgs-lib':
+    follows 'nixvim/nixvim/nixpkgs'
+• Added input 'nixvim/nixvim/home-manager':
+    'github:nix-community/home-manager/1d085ea4444d26aa52297758b333b449b2aa6fca' (2024-02-26)
+• Added input 'nixvim/nixvim/home-manager/nixpkgs':
+    follows 'nixvim/nixvim/nixpkgs'
+• Added input 'nixvim/nixvim/nix-darwin':
+    'github:lnl7/nix-darwin/6c06334f0843c7300d1678726bb607ce526f6b36' (2024-02-27)
+• Added input 'nixvim/nixvim/nix-darwin/nixpkgs':
+    follows 'nixvim/nixvim/nixpkgs'
+• Added input 'nixvim/nixvim/nixpkgs':
+    'github:NixOS/nixpkgs/13aff9b34cc32e59d35c62ac9356e4a41198a538' (2024-02-26)
+• Added input 'nixvim/nixvim/pre-commit-hooks':
+    'github:cachix/pre-commit-hooks.nix/5df5a70ad7575f6601d91f0efec95dd9bc619431' (2024-02-15)
+• Added input 'nixvim/nixvim/pre-commit-hooks/flake-compat':
+    'github:edolstra/flake-compat/0f9255e01c2351cc7d116c072cb317785dd33b33' (2023-10-04)
+• Added input 'nixvim/nixvim/pre-commit-hooks/flake-utils':
+    'github:numtide/flake-utils/4022d587cbbfd70fe950c1e2083a02621806a725' (2023-12-04)
+• Added input 'nixvim/nixvim/pre-commit-hooks/flake-utils/systems':
+    'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e' (2023-04-09)
+• Added input 'nixvim/nixvim/pre-commit-hooks/gitignore':
+    'github:hercules-ci/gitignore.nix/43e1aa1308018f37118e34d3a9cb4f5e75dc11d5' (2023-12-29)
+• Added input 'nixvim/nixvim/pre-commit-hooks/gitignore/nixpkgs':
+    follows 'nixvim/nixvim/pre-commit-hooks/nixpkgs'
+• Added input 'nixvim/nixvim/pre-commit-hooks/nixpkgs':
+    follows 'nixvim/nixvim/nixpkgs'
+• Added input 'nixvim/nixvim/pre-commit-hooks/nixpkgs-stable':
+    follows 'nixvim/nixvim/nixpkgs'
+• Removed input 'nixvim/pre-commit-hooks'
+• Removed input 'nixvim/pre-commit-hooks/flake-compat'
+• Removed input 'nixvim/pre-commit-hooks/flake-utils'
+• Removed input 'nixvim/pre-commit-hooks/flake-utils/systems'
+• Removed input 'nixvim/pre-commit-hooks/gitignore'
+• Removed input 'nixvim/pre-commit-hooks/gitignore/nixpkgs'
+• Removed input 'nixvim/pre-commit-hooks/nixpkgs'
+• Removed input 'nixvim/pre-commit-hooks/nixpkgs-stable'
+warning: Git tree '/etc/nixos/nix-os' is dirty
+error:
+       … while calling the 'seq' builtin
+
+         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:322:18:
+
+          321|         options = checked options;
+          322|         config = checked (removeAttrs config [ "_module" ]);
+             |                  ^
+          323|         _module = checked (config._module);
+
+       … while evaluating a branch condition
+
+         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:261:9:
+
+          260|       checkUnmatched =
+          261|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [] then
+             |         ^
+          262|           let
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: attribute 'nixvim' missing
+
+       at /nix/store/vwy66jhnc67js75qhqm18p2cbfsjx28n-source/hosts/default/configuration.nix:14:7:
+
+           13|       inputs.home-manager.nixosModules.default
+           14|       inputs.nixvim.nixosModules.nixvim
+             |       ^
+           15|     ];
