@@ -1,7 +1,8 @@
-{ config, pkgs, ... }:
-
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "archerr";
@@ -15,8 +16,6 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "23.11"; # Please read the comment before changing.
-
-
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -53,7 +52,6 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
   };
-
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. If you don't want to manage your shell through Home

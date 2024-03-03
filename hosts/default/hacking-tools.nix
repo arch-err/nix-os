@@ -1,10 +1,12 @@
-{ lib, config, pkgs, ... }:
-
 {
-
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
   options = {
-    hacking-tools.enable
-     = lib.mkEnableOption "enable hacking tools";
+    hacking-tools.enable =
+      lib.mkEnableOption "enable hacking tools";
   };
 
   config = lib.mkIf config.hacking-tools.enable {
@@ -13,5 +15,4 @@
       netcat-gnu
     ];
   };
-
 }

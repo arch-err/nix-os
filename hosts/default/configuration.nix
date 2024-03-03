@@ -1,19 +1,21 @@
 # Edit this configuration file to define what should be installed on
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
-
-{ config, lib, pkgs, inputs, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./hacking-tools.nix
-      ./main-user.nix
-      inputs.home-manager.nixosModules.default
-      inputs.nixvim.nixosModules.nixvim
-    ];
-
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./hacking-tools.nix
+    ./main-user.nix
+    inputs.home-manager.nixosModules.default
+    inputs.nixvim.nixosModules.nixvim
+  ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -38,14 +40,45 @@
 
     # Configure neovim options...
     options = {
-      # numbers = true;
-      relativenumber = true;
+      guicursor = "";
+
+      title = true;
+      titlestring = "neovim";
+      
+      nu = true;
+      relativenumber = false;
+      
+      tabstop = 4;
+      softtabstop = 4;
+      shiftwidth = 4;
+      expandtab = true;
+      
+      smartindent = true;
+      
+      wrap = true;
+      showcmd = false;
+      
+      swapfile = false;
+      backup = false;
+      #undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir";
+      undofile = true;
+      hlsearch = false;
       incsearch = true;
+      termguicolors = true;
+      scrolloff = 8;
+      signcolumn = "yes";
+      # isfname:append("@-@");
+      updatetime = 50;
+      colorcolumn = "80";
+
+      mouse = "a";
+      completeopt = "menuone,noselect";
     };
 
     # ...mappings...
     # keymaps.normal = {
     #   "<C-s>" = ":w<CR>";
+    #   
     #   "<esc>" = { action = ":noh<CR>"; silent = true; };
     # };
 
@@ -80,7 +113,7 @@
           {name = "buffer";}
         ];
 
-      mapping = {
+        mapping = {
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<Tab>" = {
             action = ''
@@ -98,12 +131,11 @@
                 end
               end
             '';
-            modes = [ "i" "s" ];
+            modes = ["i" "s"];
           };
         };
       };
     };
-
   };
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
@@ -112,7 +144,7 @@
   networking.hostName = "zpctr"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   # Set your time zone.
   time.timeZone = "Europe/Stockholm";
@@ -130,14 +162,13 @@
     LC_PAPER = "sv_SE.UTF-8";
     LC_TELEPHONE = "sv_SE.UTF-8";
     LC_TIME = "sv_SE.UTF-8";
-  }; 
+  };
 
   console = {
     font = "Lat2-Terminus16";
     keyMap = "sv-latin1";
-  #   useXkbConfig = true; # use xkb.options in tty.
+    #   useXkbConfig = true; # use xkb.options in tty.
   };
-
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
@@ -149,7 +180,7 @@
   nixpkgs.config.pulseaudio = true;
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = {inherit inputs;};
     users = {
       "archerr" = import ./archerr-home.nix;
     };
@@ -157,7 +188,6 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-
 
   hacking-tools.enable = true;
 
@@ -224,25 +254,23 @@
     rustc
   ];
 
-  fonts.packages = with pkgs; [ 
+  fonts.packages = with pkgs; [
     nerdfonts
     fira-code-symbols
     fira-mono
     fira-code
     fira
   ];
-   
+
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ]; 
-
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   security.sudo.wheelNeedsPassword = false;
-
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
