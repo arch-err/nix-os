@@ -25,6 +25,9 @@
   programs.nixvim = {
     enable = true;
     colorschemes.gruvbox.enable = true;
+    plugins = {
+      lualine.enable = true;
+    };
   };
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
