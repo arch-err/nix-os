@@ -106,6 +106,35 @@
     neovim
     git
     alejandra
+    duf
+    du-dust
+    ripgrep
+    sshfs-fuse
+    feroxbuster
+    wl-clipboard
+    eww
+    burpsuite
+    dirb
+    gobuster
+    wfuzz
+    ffuf
+    wpscan
+    urlhunter
+    sqlmap
+    swaynotificationcenter
+    swayosd
+    alacritty
+    tmux
+    zellij
+    wget
+    hashcat
+    john
+    thc-hydra
+    yq
+    jq
+    zathura
+    prettyping
+    btop
   ];
 
   fonts.packages = with pkgs; [ 
