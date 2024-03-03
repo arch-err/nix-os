@@ -37,6 +37,7 @@
 
     clipboard.providers.wl-copy.enable = true;
     clipboard.register = "unnamedplus";
+    globals.mapleader = " "; # Sets the leader key to comma
 
     # Configure neovim options...
     options = {
@@ -75,13 +76,26 @@
       completeopt = "menuone,noselect";
     };
 
-    # ...mappings...
-    # keymaps.normal = {
-    #   "<C-s>" = ":w<CR>";
-    #   
-    #   "<esc>" = { action = ":noh<CR>"; silent = true; };
-    # };
-
+    keymaps = [
+      {
+        mode = "n";
+        key = "<leader>z";
+        options.silent = true;
+        action = "zfip";
+      }
+      {
+        mode = "n";
+        key = "U";
+        options.silent = true;
+        action = "<C-r>";
+      }
+      {
+        mode = "n";
+        key = "<leader>r";
+        options.silent = true;
+        action = ":!vimrunner <C-r>% & disown<CR><CR>";
+      }
+    ];
     autoCmd = [
       {
           event = "BufWinLeave";
