@@ -72,24 +72,8 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # # Define a user account. Don't forget to set a password with ‘passwd’.
-  # users.users.archerr = {
-  #   isNormalUser = true;
-  #   extraGroups = [ "wheel" "audio" ]; # Enable ‘sudo’ for the user.
-  #   shell = pkgs.zsh;
-  #   packages = with pkgs; [
-  #     kitty
-  #     neovim
-  #     floorp
-  #     git
-  #     steam
-  #     obsidian
-  #   ];
-  # };
-  # programs.zsh.enable = true;
-  # nixpkgs.config.permittedInsecurePackages = [ "electron-25.9.0" ];
 
-  # hacking-tools.enable = true;
+  hacking-tools.enable = true;
 
   # Enable automatic login for the user.
   # services.getty.autologinUser = "archerr";
