@@ -84,11 +84,6 @@
       #   # action = "\\"vyiw:%s/v/v/g<Left><Left>";
       # }
       {
-        mode = "v";
-        key = "<C-'>";
-         action = "\"vyiw:%s/v/v/g<Left><Left>";
-      }
-      {
         mode = "n";
         key = "<leader>z";
         options.silent = true;
