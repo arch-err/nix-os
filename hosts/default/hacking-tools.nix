@@ -272,9 +272,8 @@
       tsung
       vegeta
        
-      # # Useful tools for malware analysis
+      # Useful tools for malware analysis
       # bingrep
-      # cutter
       # flare-floss
       # gdb
       # ghidra-bin

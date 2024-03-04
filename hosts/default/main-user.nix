@@ -31,6 +31,7 @@ in {
         nsxiv
         signal-desktop
         gitkraken
+        thunderbird
       ];
     };
     nixpkgs.config.permittedInsecurePackages = ["electron-25.9.0"];
