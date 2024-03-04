@@ -29,6 +29,7 @@ in {
         steam
         obsidian
         nsxiv
+        signal-desktop
       ];
     };
     nixpkgs.config.permittedInsecurePackages = ["electron-25.9.0"];
