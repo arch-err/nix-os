@@ -135,18 +135,17 @@
       xorex
       
       # Fuzzing tools
-      #afl
-      #aflplusplus
-      #feroxbuster
-      #ffuf
-      #gobuster
-      #honggfuzz
-      #radamsa
-      #regexploit
-      #scout
-      #ssdeep
-      #wfuzz
-      #zzuf
+      aflplusplus
+      feroxbuster
+      ffuf
+      gobuster
+      honggfuzz
+      radamsa
+      regexploit
+      scout
+      ssdeep
+      wfuzz
+      zzuf
 
       # # Generic tools (terminals, packers, clients, etc.)
       # chrony
