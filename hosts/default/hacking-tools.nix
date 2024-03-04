@@ -241,16 +241,17 @@
       theharvester
       urlhunter
 
-      # # Kubernetes infrastructure
-      # cfripper
-      # checkov
-      # cirrusgo
-      # kdigger
-      # kube-score
-      # kubeaudit
-      # kubestroyer
-      # kubescape
-      # popeye
+      # Kubernetes infrastructure
+      cfripper
+      checkov
+      cirrusgo
+      kdigger
+      kube-score
+      kubeaudit
+      kubestroyer
+      kubescape
+      popeye
+      kubectl
 
       # # LDAP/AD tools
       # adenum
