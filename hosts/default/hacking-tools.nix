@@ -490,23 +490,23 @@
       wireshark-cli
       zeek
 
-      # # Tunneling tools
-      # bore-cli
-      # corkscrew
-      # hans
-      # chisel
-      # httptunnel
-      # iodine
-      # sish
-      # stunnel
-      # udptunnel
-      # wstunnel
+      # Tunneling tools
+      bore-cli
+      corkscrew
+      hans
+      chisel
+      httptunnel
+      iodine
+      sish
+      stunnel
+      udptunnel
+      wstunnel
 
-      # # VoIP/SIP tools
-      # sipp
-      # sipsak
-      # sipvicious
-      # sngrep
+      # VoIP/SIP tools
+      sipp
+      sipsak
+      sipvicious
+      sngrep
 
       # # Tools for working with web servers, web applications, APIs, etc.
       # apachetomcatscanner
