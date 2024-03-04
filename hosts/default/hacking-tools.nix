@@ -205,22 +205,22 @@
       unrar
       unzip
 
-      # # Tools and libraries to access hardware
-      # cantoolz
-      # chipsec
-      # cmospwd
-      # esptool
-      # extrude
-      # gallia
-      # hachoir
-      # nrfutil
-      # tytools
-      # python3Packages.angr
-      # python3Packages.angrop
-      # python3Packages.can
-      # python3Packages.pyi2cflash
-      # python3Packages.pyspiflash
-      # routersploit
+      # Tools and libraries to access hardware
+      cantoolz
+      chipsec
+      cmospwd
+      esptool
+      extrude
+      gallia
+      hachoir
+      nrfutil
+      tytools
+      #python3Packages.angr
+      #python3Packages.angrop
+      python3Packages.can
+      python3Packages.pyi2cflash
+      python3Packages.pyspiflash
+      routersploit
 
       # # Host security tools
       # checksec
