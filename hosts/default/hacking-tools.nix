@@ -253,25 +253,25 @@
       popeye
       kubectl
 
-      # # LDAP/AD tools
-      # adenum
-      # msldapdump
-      # ldapmonitor
-      # ldapdomaindump
-      # ldapnomnom
-      # ldeep
-      # silenthound
+      # LDAP/AD tools
+      adenum
+      msldapdump
+      ldapmonitor
+      ldapdomaindump
+      ldapnomnom
+      ldeep
+      silenthound
 
-      # # Load testing tools
-      # ali
-      # drill
-      # cassowary
-      # ddosify
-      # oha
-      # siege
-      # tsung
-      # vegeta
-      #  
+      # Load testing tools
+      ali
+      drill
+      cassowary
+      ddosify
+      oha
+      siege
+      tsung
+      vegeta
+       
       # # Useful tools for malware analysis
       # bingrep
       # cutter
