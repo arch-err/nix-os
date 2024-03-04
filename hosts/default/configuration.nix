@@ -284,6 +284,8 @@
     qemu
     virt-manager
     gnumake
+    man-db
+    tldr
   ];
 
   fonts.packages = with pkgs; [
