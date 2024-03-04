@@ -215,33 +215,31 @@
       hachoir
       nrfutil
       tytools
-      #python3Packages.angr
-      #python3Packages.angrop
       python3Packages.can
       python3Packages.pyi2cflash
       python3Packages.pyspiflash
       routersploit
 
-      # # Host security tools
-      # checksec
-      # chkrootkit
-      # linux-exploit-suggester
-      # lynis
-      # safety-cli
-      # tracee
-      # vulnix
+      # Host security tools
+      checksec
+      chkrootkit
+      linux-exploit-suggester
+      lynis
+      safety-cli
+      tracee
+      vulnix
 
-      # # Tools for informtion gathering
-      # cloudbrute
-      # enumerepo
-      # holehe
-      # maigret
-      # metabigor
-      # p0f
-      # sn0int
-      # socialscan
-      # theharvester
-      # urlhunter
+      # Tools for informtion gathering
+      cloudbrute
+      enumerepo
+      holehe
+      maigret
+      metabigor
+      p0f
+      sn0int
+      socialscan
+      theharvester
+      urlhunter
 
       # # Kubernetes infrastructure
       # cfripper
