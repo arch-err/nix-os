@@ -171,25 +171,25 @@
       utillinux
       xh
 
-      # # Terminal helpers
-      # eternal-terminal
-      # mosh
-      # shellz
+      # Terminal helpers
+      eternal-terminal
+      mosh
+      shellz
 
-      # # Common client for various protocols
-      # cifs-utils
-      # freerdp
-      # net-snmp
-      # nfs-utils
-      # ntp
-      # openssh
-      # openvpn
-      # samba
-      # step-cli
-      # tightvnc
-      # wireguard-go
-      # wireguard-tools
-      # xrdp
+      # Common client for various protocols
+      cifs-utils
+      freerdp
+      net-snmp
+      nfs-utils
+      ntp
+      openssh
+      openvpn
+      samba
+      step-cli
+      tightvnc
+      wireguard-go
+      wireguard-tools
+      xrdp
 
       # # Network design helpers
       # ipcalc
