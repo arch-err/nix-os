@@ -90,19 +90,19 @@
       subfinder
       subzerod
   
-      # # Exploits
-      # exploitdb
-      # go-exploitdb
-      # keedump
-      # padre
-      # # log4j
-      # lmp
-      # log4jcheck
-      # log4j-detect
-      # log4j-scan
-      # log4j-sniffer
-      # log4j-vuln-scanner
-      # logmap
+      # Exploits
+      exploitdb
+      go-exploitdb
+      keedump
+      padre
+      # log4j
+      lmp
+      log4jcheck
+      log4j-detect
+      log4j-scan
+      log4j-sniffer
+      log4j-vuln-scanner
+      logmap
 
       # # Forensic tools
       # afflib
