@@ -262,16 +262,8 @@
     du-dust
     ripgrep
     sshfs-fuse
-    feroxbuster
     wl-clipboard
     eww
-    burpsuite
-    dirb
-    gobuster
-    wfuzz
-    ffuf
-    wpscan
-    urlhunter
     sqlmap
     swaynotificationcenter
     swayosd
@@ -279,9 +271,6 @@
     tmux
     zellij
     wget
-    hashcat
-    john
-    thc-hydra
     yq
     jq
     zathura
@@ -294,6 +283,7 @@
     python3Full
     qemu
     virt-manager
+    gnumake
   ];
 
   fonts.packages = with pkgs; [
