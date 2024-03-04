@@ -508,59 +508,59 @@
       sipvicious
       sngrep
 
-      # # Tools for working with web servers, web applications, APIs, etc.
-      # apachetomcatscanner
-      # arjun
-      # brakeman
-      # cansina
-      # cariddi
-      # chopchop
-      # clairvoyance
-      # commix
-      # crackql
-      # crlfsuite
-      # dalfox
-      # dismap
-      # dirstalk
-      # dontgo403
-      # galer
-      # gau
-      # gospider
-      # gotestwaf
-      # gowitness
-      # graphqlmap
-      # graphw00f
-      # hakrawler
-      # hey
-      # httpx
-      # nodePackages.hyperpotamus
-      # jaeles
-      # jsubfinder
-      # jwt-hack
-      # katana
-      # kiterunner
-      # mantra
-      # mitmproxy2swagger
-      # monsoon
-      # nikto
-      # ntlmrecon
-      # photon
-      # plecost
-      # scraper
-      # slowlorust
-      # snallygaster
-      # subjs
-      # swaggerhole
-      # uddup
-      # wad
-      # webanalyze
-      # websecprobe
-      # whatweb
-      # wprecon
-      # wpscan
-      # wuzz
-      # xcrawl3r
-      # xsubfind3r
+      # Tools for working with web servers, web applications, APIs, etc.
+      apachetomcatscanner
+      arjun
+      brakeman
+      cansina
+      cariddi
+      chopchop
+      clairvoyance
+      commix
+      crackql
+      crlfsuite
+      dalfox
+      dismap
+      dirstalk
+      dontgo403
+      galer
+      gau
+      gospider
+      gotestwaf
+      gowitness
+      graphqlmap
+      graphw00f
+      hakrawler
+      hey
+      httpx
+      nodePackages.hyperpotamus
+      jaeles
+      jsubfinder
+      jwt-hack
+      katana
+      kiterunner
+      mantra
+      mitmproxy2swagger
+      monsoon
+      nikto
+      ntlmrecon
+      photon
+      plecost
+      scraper
+      slowlorust
+      snallygaster
+      subjs
+      swaggerhole
+      uddup
+      wad
+      webanalyze
+      websecprobe
+      whatweb
+      wprecon
+      wpscan
+      wuzz
+      xcrawl3r
+      xsubfind3r
 
       # # Microsoft infrastructure and Windows-related tools, incl. SMB
       # bloodhound-py
