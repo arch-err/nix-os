@@ -311,44 +311,44 @@
       python3Packages.pytenable
       snscrape
 
-      # # Tools for working with Android/iOS devices
-      # abootimg
-      # androguard
-      # apkeep
-      # apkleaks
-      # apktool
-      # dex2jar
-      # genymotion
-      # ghost
-      # payload-dumper-go
-      # scrcpy
-      # simg2img
-      # trueseeing
+      # Tools for working with Android/iOS devices
+      abootimg
+      androguard
+      apkeep
+      apkleaks
+      apktool
+      dex2jar
+      genymotion
+      ghost
+      payload-dumper-go
+      scrcpy
+      simg2img
+      trueseeing
 
-      # # Common network tools
-      # arping
-      # atftp
-      # bandwhich
-      # crackmapexec
-      # evillimiter
-      # iperf2
-      # lftp
-      # mitm6
-      # mtr
-      # ncftp
-      # netcat-gnu
-      # netdiscover
-      # nload
-      # nuttcp
-      # putty
-      # pwnat
-      # responder
-      # rustcat
-      # sshping
-      # sslh
-      # wbox
-      # whois
-      # yersinia
+      # Common network tools
+      arping
+      atftp
+      bandwhich
+      crackmapexec
+      evillimiter
+      iperf2
+      lftp
+      mitm6
+      mtr
+      ncftp
+      netcat-gnu
+      netdiscover
+      nload
+      nuttcp
+      putty
+      pwnat
+      responder
+      rustcat
+      sshping
+      sslh
+      wbox
+      whois
+      yersinia
 
       # # Tools to generate packets
       # boofuzz
