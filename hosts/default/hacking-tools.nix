@@ -379,17 +379,17 @@
       thc-hydra
       truecrack
  
-      # # Port scanners
-      # arp-scan
-      # das
-      # ipscan
-      # masscan
-      # naabu
-      # nmap
-      # udpx
-      # sx-go
-      # rustscan
-      # zmap
+      # Port scanners
+      arp-scan
+      das
+      ipscan
+      masscan
+      naabu
+      nmap
+      udpx
+      sx-go
+      rustscan
+      zmap
 
       # # Proxy tools for MitM scenarios
       # bettercap
