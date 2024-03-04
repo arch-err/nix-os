@@ -32,6 +32,9 @@ in {
         signal-desktop
         gitkraken
         thunderbird
+        bitwarden
+        bitwarden-cli
+        rofi-rbw
       ];
     };
     nixpkgs.config.permittedInsecurePackages = ["electron-25.9.0"];
