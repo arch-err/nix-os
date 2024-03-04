@@ -154,6 +154,7 @@
       cyberchef
       dorkscout
       easyeasm
+      pwncat
       exiflooter
       flashrom
       girsh
