@@ -296,20 +296,20 @@
       # zkar
       # zydis
 
-      # # Various tools
-      # ares-rs
-      # badchars
-      # changetower
-      # creds
-      # doona
-      # galleta
-      # honeytrap
-      # jwt-cli
-      # kepler
-      # nmap-formatter
-      # pwntools
-      # python3Packages.pytenable
-      # snscrape
+      # Various tools
+      ares-rs
+      badchars
+      changetower
+      creds
+      doona
+      galleta
+      honeytrap
+      jwt-cli
+      kepler
+      nmap-formatter
+      pwntools
+      python3Packages.pytenable
+      snscrape
 
       # # Tools for working with Android/iOS devices
       # abootimg
