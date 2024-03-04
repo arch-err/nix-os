@@ -24,7 +24,7 @@
   boot.initrd.systemd.enable = true;
   boot.plymouth.enable = true;
   boot.plymouth.theme = "bgrt";
-
+  # boot.plymouth.logo = "/etc/nixos/nix-os/plymouth/images.jpg";
   programs.nixvim = {
     enable = true;
 
