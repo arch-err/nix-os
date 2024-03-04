@@ -351,13 +351,13 @@
       yersinia
 
       # Tools to generate packets
-      # boofuzz
-      # gping
-      # fping
-      # hping
-      # ostinato
+      boofuzz
+      gping
+      fping
+      hping
+      ostinato
       # pktgen
-      # python3Packages.scapy
+      python3Packages.scapy
 
       # Password and hashing tools
       authoscope
