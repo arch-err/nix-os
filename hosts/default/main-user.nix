@@ -35,6 +35,7 @@ in {
         bitwarden
         bitwarden-cli
         rofi-rbw
+        firefox
       ];
     };
     nixpkgs.config.permittedInsecurePackages = ["electron-25.9.0"];

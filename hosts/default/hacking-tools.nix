@@ -350,7 +350,7 @@
       whois
       yersinia
 
-      # # Tools to generate packets
+      # Tools to generate packets
       # boofuzz
       # gping
       # fping
