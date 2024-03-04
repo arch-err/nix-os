@@ -391,17 +391,17 @@
       rustscan
       zmap
 
-      # # Proxy tools for MitM scenarios
-      # bettercap
-      # burpsuite
-      # ettercap
-      # mitmproxy
-      # mubeng
-      # proxify
-      # proxychains
-      # redsocks
-      # rshijack
-      # zap
+      # Proxy tools for MitM scenarios
+      bettercap
+      burpsuite
+      ettercap
+      mitmproxy
+      mubeng
+      proxify
+      proxychains
+      redsocks
+      rshijack
+      zap
 
       # # Tools for testing various services (SSH, SNMP, etc.)
       # acltoolkit
