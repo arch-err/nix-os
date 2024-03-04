@@ -26,17 +26,17 @@
       redfang
       ubertooth
 
-      # # Cloud
-      # cloud-nuke
-      # cloudfox
-      # ec2stepshell
-      # gato
-      # gcp-scanner
-      # ggshield
-      # goblob
-      # imdshift
-      # prowler
-      # yatas
+      # Cloud
+      cloud-nuke
+      cloudfox
+      ec2stepshell
+      gato
+      gcp-scanner
+      ggshield
+      goblob
+      imdshift
+      prowler
+      yatas
 
       # # Container analysing tools
       # cdk-go
