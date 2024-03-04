@@ -359,25 +359,25 @@
       # pktgen
       # python3Packages.scapy
 
-      # # Password and hashing tools
-      # authoscope
-      # bruteforce-luks
-      # brutespray
-      # crunch
-      # h8mail
-      # hashcat
-      # hashcat-utils
-      # hashdeep
-      # john
-      # legba
-      # medusa
-      # nasty
-      # ncrack
-      # nth
-      # phrasendrescher
-      # python3Packages.patator
-      # thc-hydra
-      # truecrack
+      # Password and hashing tools
+      authoscope
+      bruteforce-luks
+      brutespray
+      crunch
+      h8mail
+      hashcat
+      hashcat-utils
+      hashdeep
+      john
+      legba
+      medusa
+      nasty
+      ncrack
+      nth
+      phrasendrescher
+      python3Packages.patator
+      thc-hydra
+      truecrack
  
       # # Port scanners
       # arp-scan
