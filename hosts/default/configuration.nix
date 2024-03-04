@@ -286,6 +286,7 @@
     gnumake
     man-db
     tldr
+    flameshot
   ];
 
   fonts.packages = with pkgs; [
