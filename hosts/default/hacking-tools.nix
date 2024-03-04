@@ -450,24 +450,24 @@
       # WebDAV
       davtest
 
-      # # Smartcard tools
-      # cardpeek
-      # libfreefare
-      # mfcuk
-      # mfoc
-      # python3Packages.emv
+      # Smartcard tools
+      cardpeek
+      libfreefare
+      mfcuk
+      mfoc
+      python3Packages.emv
 
-      # # Terminal tools
-      # cutecom
-      # minicom
-      # picocom
-      # socat
-      # x3270
-      # sslscan
-      # ssldump
-      # sslsplit
-      # testssl
-      # tlsx
+      # Terminal tools
+      cutecom
+      minicom
+      picocom
+      socat
+      x3270
+      sslscan
+      ssldump
+      sslsplit
+      testssl
+      tlsx
       #  
       # # Tools to capture network traffic
       # anevicon

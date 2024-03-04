@@ -300,6 +300,8 @@
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
+  programs.steam.enable = true;
+
   security.sudo.wheelNeedsPassword = false;
 
   # Some programs need SUID wrappers, can be configured further or are
