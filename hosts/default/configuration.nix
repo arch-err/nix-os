@@ -287,7 +287,19 @@
     man-db
     tldr
     flameshot
+    hugo
+    docker
+    docker-compose
   ];
+
+  users.users.archerr.extraGroups = [ "docker" ];
+  virtualisation.docker.storageDriver = "btrfs";
+  virtualisation.docker.enable = true;
+
+  virtualisation.docker.rootless = {
+      enable = true;
+      setSocketVariable = true;
+  };
 
   fonts.packages = with pkgs; [
     nerdfonts
