@@ -191,19 +191,19 @@
       wireguard-tools
       xrdp
 
-      # # Network design helpers
-      # ipcalc
-      # netmask
+      # Network design helpers
+      ipcalc
+      netmask
 
-      # # Terminal multiplexer
-      # tmux
-      # zellij
+      # Terminal multiplexer
+      tmux
+      zellij
 
-      # # Archive tools
-      # cabextract
-      # p7zip
-      # unrar
-      # unzip
+      # Archive tools
+      cabextract
+      p7zip
+      unrar
+      unzip
 
       # # Tools and libraries to access hardware
       # cantoolz
