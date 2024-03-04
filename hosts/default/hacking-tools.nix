@@ -49,27 +49,27 @@
       grype
       trivy
 
-      # # Code analysing tools, incl. search for secrets and alike in code
-      # bomber-go
-      # cargo-audit
-      # credential-detector
-      # deepsecrets
-      # detect-secrets
-      # freeze
-      # git-secret
-      # gitjacker
-      # gitleaks
-      # gitls
-      # gokart
-      # legitify
-      # osv-detector
-      # packj
-      # pip-audit
-      # python310Packages.safety
-      # secretscanner
-      # tell-me-your-secrets
-      # trufflehog
-      # whispers
+      # Code analysing tools, incl. search for secrets and alike in code
+      bomber-go
+      cargo-audit
+      credential-detector
+      deepsecrets
+      detect-secrets
+      freeze
+      git-secret
+      gitjacker
+      gitleaks
+      gitls
+      gokart
+      legitify
+      osv-detector
+      packj
+      pip-audit
+      python310Packages.safety
+      secretscanner
+      tell-me-your-secrets
+      trufflehog
+      whispers
 
       # # Tools for DNS queries and enumeration
       # aiodnsbrute
