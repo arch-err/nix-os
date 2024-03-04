@@ -148,28 +148,28 @@
       zzuf
 
       # # Generic tools (terminals, packers, clients, etc.)
-      # chrony
-      # clamav
-      # curl
-      # cyberchef
-      # dorkscout
-      # easyeasm
-      # exiflooter
-      # flashrom
-      # girsh
-      # httpie
-      # hurl
-      # inetutils
-      # inxi
-      # ioccheck
-      # iproute
-      # iproute2
-      # macchanger
-      # pwgen
-      # ronin
-      # spyre
-      # utillinux
-      # xh
+      chrony
+      clamav
+      curl
+      cyberchef
+      dorkscout
+      easyeasm
+      exiflooter
+      flashrom
+      girsh
+      httpie
+      hurl
+      inetutils
+      inxi
+      ioccheck
+      iproute
+      iproute2
+      macchanger
+      pwgen
+      ronin
+      spyre
+      utillinux
+      xh
 
       # # Terminal helpers
       # eternal-terminal
