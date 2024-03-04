@@ -36,6 +36,7 @@ in {
         bitwarden-cli
         rofi-rbw
         firefox
+        prismlauncher
       ];
     };
     nixpkgs.config.permittedInsecurePackages = ["electron-25.9.0"];
