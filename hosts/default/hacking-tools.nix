@@ -273,28 +273,27 @@
       vegeta
        
       # Useful tools for malware analysis
-      # bingrep
-      # flare-floss
-      # gdb
-      # ghidra-bin
-      # ioc-scan
-      # pev
-      # pwndbg
-      # python3Packages.binwalk
-      # python3Packages.malduck
-      # python3Packages.karton-core
-      # python3Packages.unicorn
-      # python3Packages.r2pipe
-      # radare2
-      # radare2-cutter
-      # rizin
-      # stacs
-      # unicorn
-      # unicorn-emu
-      # xortool
-      # yara
-      # zkar
-      # zydis
+      bingrep
+      flare-floss
+      gdb
+      ghidra-bin
+      ioc-scan
+      pev
+      pwndbg
+      python3Packages.binwalk
+      python3Packages.malduck
+      python3Packages.karton-core
+      python3Packages.unicorn
+      python3Packages.r2pipe
+      radare2
+      rizin
+      stacs
+      unicorn
+      unicorn-emu
+      xortool
+      yara
+      zkar
+      zydis
 
       # Various tools
       ares-rs
@@ -356,7 +355,6 @@
       fping
       hping
       ostinato
-      # pktgen
       python3Packages.scapy
 
       # Password and hashing tools
