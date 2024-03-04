@@ -236,6 +236,7 @@
   environment.systemPackages = with pkgs; [
     vim
     file
+    moreutils
     psmisc # killall, pstree, and some more
     swww
     wlogout
