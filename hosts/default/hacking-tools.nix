@@ -586,20 +586,20 @@
       smbmap
       smbscan
 
-      # # Wireless tools
-      # aircrack-ng
-      # airgeddon
-      # bully
-      # cowpatty
-      # dbmonster
-      # horst
-      # killerbee
-      # kismet
-      # pixiewps
-      # reaverwps
-      # wavemon
-      # wifite2
-      # zigpy-cli
+      # Wireless tools
+      aircrack-ng
+      airgeddon
+      bully
+      cowpatty
+      dbmonster
+      horst
+      killerbee
+      kismet
+      pixiewps
+      reaverwps
+      wavemon
+      wifite2
+      zigpy-cli
 
     ];
   };
