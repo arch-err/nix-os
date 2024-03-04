@@ -38,16 +38,16 @@
       prowler
       yatas
 
-      # # Container analysing tools
-      # cdk-go
-      # clair
-      # cliam
-      # cloudlist
-      # dive
-      # dockle
-      # fwanalyzer
-      # grype
-      # trivy
+      # Container analysing tools
+      cdk-go
+      clair
+      cliam
+      cloudlist
+      dive
+      dockle
+      fwanalyzer
+      grype
+      trivy
 
       # # Code analysing tools, incl. search for secrets and alike in code
       # bomber-go
