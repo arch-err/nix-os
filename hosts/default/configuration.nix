@@ -116,7 +116,8 @@
     ];
 
     plugins = {
-      # lualine.enable = true;
+      lualine.enable = true;
+      bufferline.enable = true;
       auto-save.enable = true;
       commentary.enable = true;
       surround.enable = true;
@@ -278,7 +279,6 @@
     btop
     openssl
     rustc
-    # "perl5.38.2-App-vidir"
     nodejs
     python3Full
     qemu
@@ -292,6 +292,7 @@
     docker-compose
     upower
   ];
+
 
   users.users.archerr.extraGroups = [ "docker" ];
   virtualisation.docker.storageDriver = "btrfs";
