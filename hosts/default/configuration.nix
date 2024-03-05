@@ -117,7 +117,7 @@
         mode = "n";
         key = "<leader>o";
         options.silent = true;
-        action = ":Telescope find_files";
+        action = ":Telescope find_files";
       }
     ];
     autoCmd = [
