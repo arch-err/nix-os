@@ -290,6 +290,7 @@
     hugo
     docker
     docker-compose
+    upower
   ];
 
   users.users.archerr.extraGroups = [ "docker" ];
