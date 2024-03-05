@@ -146,6 +146,10 @@
       nvim-tree.enable = true;
       telescope = {
         enable = true;
+        keymaps = {
+          "<leader>f" = "find_files";
+          "<leader>g" = "live_grep";
+        };
       };
       oil.enable = true;
       treesitter.enable = true;
