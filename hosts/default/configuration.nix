@@ -101,6 +101,24 @@
         options.silent = true;
         action = ":!vimrunner <C-r>% & disown<CR><CR>";
       }
+      {
+        mode = "n";
+        key = "<leader>j";
+        options.silent = true;
+        action = ":bn";
+      }
+      {
+        mode = "n";
+        key = "<leader>k";
+        options.silent = true;
+        action = ":bp";
+      }
+      {
+        mode = "n";
+        key = "<leader>o";
+        options.silent = true;
+        action = ":Telescope find_files";
+      }
     ];
     autoCmd = [
       {
@@ -128,10 +146,6 @@
       nvim-tree.enable = true;
       telescope = {
         enable = true;
-        keymaps = {
-          "<leader>f" = "find_files";
-          "<leader>g" = "live_grep";
-        };
       };
       oil.enable = true;
       treesitter.enable = true;
