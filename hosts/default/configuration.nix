@@ -309,6 +309,7 @@
     docker
     docker-compose
     upower
+    libnotify
   ];
 
 
