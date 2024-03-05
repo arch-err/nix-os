@@ -103,15 +103,15 @@
       }
       {
         mode = "n";
-        key = "<leader>j";
+        key = "<leader>k";
         options.silent = true;
-        action = ":bn";
+        action = ":bn";
       }
       {
         mode = "n";
-        key = "<leader>k";
+        key = "<leader>j";
         options.silent = true;
-        action = ":bp";
+        action = ":bp";
       }
       {
         mode = "n";
