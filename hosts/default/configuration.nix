@@ -310,6 +310,7 @@
     docker-compose
     upower
     libnotify
+    mpv
   ];
 
 
