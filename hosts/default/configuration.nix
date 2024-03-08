@@ -8,7 +8,6 @@
   inputs,
   ...
 }: {
-
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -42,23 +41,23 @@
 
     options = {
       guicursor = "";
-#
+      #
       title = true;
       titlestring = "neovim";
-#      
+      #
       nu = true;
       relativenumber = false;
-#      
+      #
       tabstop = 4;
       softtabstop = 4;
       shiftwidth = 4;
       expandtab = true;
-#
+      #
       smartindent = true;
-#
+      #
       wrap = true;
       showcmd = false;
-#
+      #
       swapfile = false;
       backup = false;
       #undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir";
@@ -71,7 +70,7 @@
       # isfname:append("@-@");
       updatetime = 50;
       # colorcolumn = "80";
-#
+      #
       mouse = "a";
       completeopt = "menuone,noselect";
     };
@@ -122,14 +121,14 @@
     ];
     autoCmd = [
       {
-          event = "BufWinLeave";
-          pattern = "*.*";
-          command = "mkview";
+        event = "BufWinLeave";
+        pattern = "*.*";
+        command = "mkview";
       }
       {
-          event = "BufWinEnter";
-          pattern = "*.*";
-          command = "silent! loadview";
+        event = "BufWinEnter";
+        pattern = "*.*";
+        command = "silent! loadview";
       }
     ];
 
@@ -313,14 +312,13 @@
     mpv
   ];
 
-
-  users.users.archerr.extraGroups = [ "docker" ];
+  users.users.archerr.extraGroups = ["docker"];
   virtualisation.docker.storageDriver = "btrfs";
   virtualisation.docker.enable = true;
 
   virtualisation.docker.rootless = {
-      enable = true;
-      setSocketVariable = true;
+    enable = true;
+    setSocketVariable = true;
   };
 
   fonts.packages = with pkgs; [

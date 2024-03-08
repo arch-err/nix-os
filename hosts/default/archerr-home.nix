@@ -40,8 +40,6 @@
     # '')
   ];
 
-
-
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
@@ -73,26 +71,25 @@
   #  /etc/profiles/per-user/archerr/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    BROWSER="floorp";
-    SEC_BROWSER="firefox";
-    
-    EDITOR="nvim";
-    SEC_EDITOR="nvim";
-    # SEC_EDITOR="codium";
-    
-    IMG_VIEWER="nsxiv";
-    VID_PLAYER="nsxiv";
-    AUDIO_PLAYER="nsxiv";
-    
-    TERMINAL="kitty";
-    SEC_TERMINAL="alacritty";
-    
-    MENU="rofi";
-    # MENU_TUI="bemenu";
-    PAGER="less";
-    
-    NOTES="obsidian";
+    BROWSER = "floorp";
+    SEC_BROWSER = "firefox";
 
+    EDITOR = "nvim";
+    SEC_EDITOR = "nvim";
+    # SEC_EDITOR="codium";
+
+    IMG_VIEWER = "nsxiv";
+    VID_PLAYER = "nsxiv";
+    AUDIO_PLAYER = "nsxiv";
+
+    TERMINAL = "kitty";
+    SEC_TERMINAL = "alacritty";
+
+    MENU = "rofi";
+    # MENU_TUI="bemenu";
+    PAGER = "less";
+
+    NOTES = "obsidian";
   };
 
   # Let Home Manager install and manage itself.

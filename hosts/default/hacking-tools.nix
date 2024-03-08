@@ -9,16 +9,13 @@
       lib.mkEnableOption "enable hacking tools";
   };
 
-
   config = lib.mkIf config.hacking-tools.enable {
-
     nixpkgs.config.permittedInsecurePackages = [
       "python-2.7.18.7"
       "tightvnc-1.3.10"
     ];
 
     environment.systemPackages = with pkgs; [
-
       # Bluetooth tools
       bluez
       bluewalker
@@ -89,7 +86,7 @@
       knockpy
       subfinder
       subzerod
-  
+
       # Exploits
       exploitdb
       go-exploitdb
@@ -133,7 +130,7 @@
       volatility3
       wipe
       xorex
-      
+
       # Fuzzing tools
       aflplusplus
       feroxbuster
@@ -272,7 +269,7 @@
       siege
       tsung
       vegeta
-       
+
       # Useful tools for malware analysis
       bingrep
       flare-floss
@@ -377,7 +374,7 @@
       python3Packages.patator
       thc-hydra
       truecrack
- 
+
       # Port scanners
       arp-scan
       das
@@ -599,7 +596,6 @@
       wavemon
       wifite2
       zigpy-cli
-
     ];
   };
 }

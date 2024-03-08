@@ -1,17 +1,38 @@
 #!/usr/bin/env bash
 
+# set -e
 
 HOST="default"
+BUILD_CMD="nixos-rebuild switch --flake "/etc/nixos/nix-os#$HOST""
+LOGFILE="nixos-switch.log"
+test -z $EDITOR && EDITOR="vim"
 
-set -e
-#pushd "~/.os/hosts/$HOST/"
-cd  "$HOME/.os/hosts/$HOST/"
+echo hi
+pushd "~/.os/hosts/$HOST/" &>/dev/null
+
 "$EDITOR" configuration.nix
-# alejandra . &>/dev/null
-#git diff -U0 *.nix
+
+if which alejandra &>/dev/null
+then
+    alejandra . &>/dev/null
+fi
+
+git diff -U0 *.nix
+
 echo "NixOS Rebuilding..."
-sudo nixos-rebuild switch --flake "/etc/nixos/nix-os#$HOST" # &>nixos-switch.log || ( cat nixos-switch.log | grep --color error && false)
-gen=$(nixos-rebuild --flake "/etc/nixos/nix-os#$HOST" list-generations | grep current)
+sudo BUILD_CMD | tee "$LOGFILE" 
+
+if grep "error" "$LOGFILE"
+then
+  echo -en "\e[0;31m"
+  echo "Errors were found :("
+  echo -en "\e[0m"
+fi
+
+grep --color error "$LOGFILE" 
+
+gen=$($BUILD_CMD list-generations | grep current)
+
 git commit -am "$gen"
-cd - 
-# popd
+
+popd
