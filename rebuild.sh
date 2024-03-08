@@ -7,8 +7,8 @@ BUILD_CMD="nixos-rebuild switch --flake "/etc/nixos/nix-os#$HOST""
 LOGFILE="nixos-switch.log"
 test -z $EDITOR && EDITOR="vim"
 
-echo hi
-pushd "~/.os/hosts/$HOST/" &>/dev/null
+pushd ~/.os/hosts/$HOST &>/dev/null
+
 
 "$EDITOR" configuration.nix
 
