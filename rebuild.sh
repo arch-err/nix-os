@@ -20,7 +20,7 @@ fi
 git diff -U0 *.nix
 
 echo "NixOS Rebuilding..."
-sudo BUILD_CMD | tee "$LOGFILE" 
+sudo $BUILD_CMD | tee "$LOGFILE" 
 
 if grep "error" "$LOGFILE"
 then
