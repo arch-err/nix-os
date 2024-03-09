@@ -7,7 +7,7 @@ BUILD_CMD="nixos-rebuild switch --flake "/etc/nixos/nix-os#$HOST""
 LOGFILE="nixos-switch.log"
 test -z $EDITOR && EDITOR="vim"
 
-pushd ~/.os/hosts/$HOST &>/dev/null
+cd ~/.os/hosts/$HOST
 
 
 "$EDITOR" configuration.nix
@@ -35,4 +35,4 @@ gen=$($BUILD_CMD list-generations | grep current)
 
 git commit -am "$gen"
 
-popd
+cd - &>/dev/null
