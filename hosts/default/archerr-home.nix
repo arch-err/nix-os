@@ -85,7 +85,7 @@
     TERMINAL = "kitty";
     SEC_TERMINAL = "alacritty";
 
-    MENU = "rofi";
+    MENU = "~/.config/hypr/scripts/fzfmenu";
     # MENU_TUI="bemenu";
     PAGER = "less";
 
