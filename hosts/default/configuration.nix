@@ -228,6 +228,11 @@
 
   services.upower.enable = true;
 
+  systemd.sleep.extraConfig = ''
+    [Sleep]
+    HibernateMode=shutdown
+  '';
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
