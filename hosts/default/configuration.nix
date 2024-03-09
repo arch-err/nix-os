@@ -321,6 +321,7 @@
     upower
     libnotify
     mpv
+    qutebrowser
   ];
 
   users.users.archerr.extraGroups = ["docker"];
