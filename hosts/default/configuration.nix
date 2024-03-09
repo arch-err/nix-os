@@ -226,6 +226,8 @@
     #   useXkbConfig = true; # use xkb.options in tty.
   };
 
+  services.upower.enable = true;
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
