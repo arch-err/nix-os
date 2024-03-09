@@ -232,6 +232,9 @@
     [Sleep]
     HibernateMode=shutdown
   '';
+  systemd.services.systemd-logind.environment = {
+    SYSTEMD_BYPASS_HIBERNATION_MEMORY_CHECK = "1";
+  };
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
