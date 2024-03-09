@@ -220,7 +220,8 @@
   };
 
   console = {
-    font = "Lat2-Terminus16";
+    # font = "Lat2-Terminus16";
+    font = "${pkgs.terminus_font}/share/consolefonts/ter-120n.psf.gz";
     keyMap = "sv-latin1";
     #   useXkbConfig = true; # use xkb.options in tty.
   };
