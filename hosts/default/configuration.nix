@@ -322,7 +322,6 @@
     libnotify
     mpv
     qutebrowser
-    python3.11-pip
   ];
 
   users.users.archerr.extraGroups = ["docker"];
@@ -333,6 +332,12 @@
     enable = true;
     setSocketVariable = true;
   };
+
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged
+    # programs here, NOT in environment.systemPackages
+  ];
 
   fonts.packages = with pkgs; [
     nerdfonts
