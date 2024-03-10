@@ -130,6 +130,7 @@
       volatility3
       wipe
       xorex
+      qpdf
 
       # Fuzzing tools
       aflplusplus
