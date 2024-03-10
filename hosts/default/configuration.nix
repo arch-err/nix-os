@@ -322,6 +322,7 @@
     libnotify
     mpv
     qutebrowser
+    python3.11-pip
   ];
 
   users.users.archerr.extraGroups = ["docker"];
