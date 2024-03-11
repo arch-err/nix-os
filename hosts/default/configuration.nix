@@ -322,6 +322,7 @@
     libnotify
     mpv
     qutebrowser
+    xdg-desktop-portal-hyprland
   ];
 
   users.users.archerr.extraGroups = ["docker"];
