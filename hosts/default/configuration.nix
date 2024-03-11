@@ -240,10 +240,10 @@
   # services.printing.enable = true;
 
   # Enable sound.
-  # sound.enable = true;
-  # hardware.pulseaudio.enable = true;
+  sound.enable = true;
+  hardware.pulseaudio.enable = true;
   # hardware.pulseaudio.support32Bit = true;
-  # nixpkgs.config.pulseaudio = true;
+  nixpkgs.config.pulseaudio = true;
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
@@ -326,25 +326,27 @@
   ];
 
   # rtkit is optional but recommended
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-  };
-  services.pipewire.wireplumber.configPackages = [
-    (pkgs.writeTextDir "share/wireplumber/bluetooth.lua.d/51-bluez-config.lua" ''
-      bluez_monitor.properties = {
-      	["bluez5.enable-sbc-xq"] = true,
-      	["bluez5.enable-msbc"] = true,
-      	["bluez5.enable-hw-volume"] = true,
-      	["bluez5.headset-roles"] = "[ hsp_hs hsp_ag hfp_hf hfp_ag ]"
-      }
-    '')
-  ];
+  # security.rtkit.enable = true;
+  # services.pipewire = {
+  #   enable = true;
+  #   alsa.enable = true;
+  #   alsa.support32Bit = true;
+  #   pulse.enable = true;
+  #   wireplumber.enable = true;
+  #   # If you want to use JACK applications, uncomment this
+  #   #jack.enable = true;
+  # };
+
+  # services.pipewire.wireplumber.configPackages = [
+  #   (pkgs.writeTextDir "share/wireplumber/bluetooth.lua.d/51-bluez-config.lua" ''
+  #     bluez_monitor.properties = {
+  #     	["bluez5.enable-sbc-xq"] = true,
+  #     	["bluez5.enable-msbc"] = true,
+  #     	["bluez5.enable-hw-volume"] = true,
+  #     	["bluez5.headset-roles"] = "[ hsp_hs hsp_ag hfp_hf hfp_ag ]"
+  #     }
+  #   '')
+  # ];
 
   users.users.archerr.extraGroups = ["docker"];
   virtualisation.docker.storageDriver = "btrfs";
