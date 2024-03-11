@@ -364,6 +364,13 @@
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+    ];
+  };
+
   programs.steam.enable = true;
 
   security.sudo.wheelNeedsPassword = false;
