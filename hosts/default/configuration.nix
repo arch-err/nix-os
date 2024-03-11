@@ -241,9 +241,9 @@
 
   # Enable sound.
   sound.enable = true;
-  # hardware.pulseaudio.enable = true;
-  # hardware.pulseaudio.support32Bit = true;
-  # nixpkgs.config.pulseaudio = true;
+  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.support32Bit = true;
+  nixpkgs.config.pulseaudio = true;
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
@@ -329,16 +329,6 @@
   virtualisation.docker.storageDriver = "btrfs";
   virtualisation.docker.enable = true;
 
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-  };
-
   virtualisation.docker.rootless = {
     enable = true;
     setSocketVariable = true;
@@ -366,9 +356,6 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-hyprland
-    ];
   };
 
   programs.steam.enable = true;
