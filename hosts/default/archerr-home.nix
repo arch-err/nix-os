@@ -92,7 +92,7 @@
     ];
 
     extraConfig = ''
-      ${builtins.readFile ./dotfiles/hypr/hyprland.conf}
+      ${builtins.readFile /etc/nixos/nix-os/hosts/default/dotfiles/hypr/hyprland.conf}
     '';
   };
 
