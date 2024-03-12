@@ -378,9 +378,9 @@
   };
   programs.hyprland.portalPackage = inputs.xdg-desktop-portal-hyprland.packages."${pkgs.system}".xdg-desktop-portal-hyprland;
 
-  xdg.portal = {
-    enable = true;
-  };
+  # xdg.portal = {
+  #   enable = true;
+  # };
 
   programs.steam.enable = true;
 
