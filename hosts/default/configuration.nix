@@ -324,6 +324,7 @@
     qutebrowser
     hyprland
     xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
   ];
 
   # rtkit is optional but recommended
@@ -381,7 +382,7 @@
 
   xdg.portal = {
     enable = true;
-    # extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+    extraPortals = [pkgs.xdg-desktop-portal-gtk];
   };
 
   programs.steam.enable = true;
