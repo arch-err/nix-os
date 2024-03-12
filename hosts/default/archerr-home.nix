@@ -83,6 +83,13 @@
   #   # Whether to enable hyprland-session.target on hyprland startup
   #   systemd.enable = true;
   # };
+  wayland.windowManager.hyprland.enable = true;
+
+  wayland.windowManager.hyprland.plugins = [
+    inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+    "/home/archerr/.local/src/grab-workspace/grab-workspace.so"
+  ];
+
   home.sessionVariables = {
     BROWSER = "floorp";
     SEC_BROWSER = "firefox";
