@@ -103,6 +103,10 @@
     PAGER = "less";
 
     NOTES = "obsidian";
+
+    XDG_CURRENT_DESKTOP = "Hyprland";
+    XDG_SESSION_DESKTOP = "Hyprland";
+    XDG_SESSION_TYPE = "wayland";
   };
 
   # Let Home Manager install and manage itself.
