@@ -90,6 +90,10 @@
       inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
       # ...
     ];
+
+    extraConfig = ''
+      ${builtins.readFile ./dotfiles/hypr/hyprland.conf}
+    '';
   };
 
   home.sessionVariables = {
