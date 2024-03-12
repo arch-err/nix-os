@@ -324,6 +324,7 @@
     qutebrowser
     hyprland
     xdg-desktop-portal-hyprland
+    hyprpicker
     # xdg-desktop-portal-gtk
   ];
 

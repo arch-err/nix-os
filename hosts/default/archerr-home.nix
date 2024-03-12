@@ -83,11 +83,11 @@
   #   # Whether to enable hyprland-session.target on hyprland startup
   #   systemd.enable = true;
   # };
-  wayland.windowManager.hyprland.enable = true;
+  # wayland.windowManager.hyprland.enable = true;
 
-  wayland.windowManager.hyprland.plugins = [
-    "/absolute/path/to/plugin.so"
-  ];
+  # wayland.windowManager.hyprland.plugins = [
+  #   "/absolute/path/to/plugin.so"
+  # ];
 
   home.sessionVariables = {
     BROWSER = "floorp";
