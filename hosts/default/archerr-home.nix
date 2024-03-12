@@ -86,8 +86,7 @@
   wayland.windowManager.hyprland.enable = true;
 
   wayland.windowManager.hyprland.plugins = [
-    inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
-    "/home/archerr/.local/src/grab-workspace/grab-workspace.so"
+    "/absolute/path/to/plugin.so"
   ];
 
   home.sessionVariables = {
