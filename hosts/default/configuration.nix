@@ -377,9 +377,9 @@
     package = inputs.hyprland.packages."${pkgs.system}".hyprland;
   };
 
-  xdg.portal = {
-    enable = true;
-  };
+  # xdg.portal = {
+  #   enable = true;
+  # };
 
   programs.steam.enable = true;
 
