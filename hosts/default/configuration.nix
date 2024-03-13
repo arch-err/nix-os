@@ -9,12 +9,12 @@
   ...
 }: {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ./hacking-tools.nix
+    ./nixvim.nix
     ./main-user.nix
-    inputs.home-manager.nixosModules.default
     inputs.nixvim.nixosModules.nixvim
+    inputs.home-manager.nixosModules.default
   ];
 
   # Use the systemd-boot EFI boot loader.
@@ -24,175 +24,6 @@
   boot.plymouth.enable = true;
   boot.plymouth.theme = "bgrt";
   # boot.plymouth.logo = "/etc/nixos/nix-os/plymouth/images.jpg";
-  programs.nixvim = {
-    enable = true;
-
-    colorschemes.nord = {
-      enable = true;
-      settings = {
-        disable_background = true;
-        enable_sidebar_background = true;
-      };
-    };
-
-    clipboard.providers.wl-copy.enable = true;
-    clipboard.register = "unnamedplus";
-    globals.mapleader = " "; # Sets the leader key to comma
-
-    options = {
-      guicursor = "";
-      #
-      title = true;
-      titlestring = "neovim";
-      #
-      nu = true;
-      relativenumber = false;
-      #
-      tabstop = 4;
-      softtabstop = 4;
-      shiftwidth = 4;
-      expandtab = true;
-      #
-      smartindent = true;
-      #
-      wrap = true;
-      showcmd = false;
-      #
-      swapfile = false;
-      backup = false;
-      #undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir";
-      undofile = true;
-      hlsearch = false;
-      incsearch = true;
-      termguicolors = true;
-      scrolloff = 8;
-      signcolumn = "yes";
-      # isfname:append("@-@");
-      updatetime = 50;
-      # colorcolumn = "80";
-      #
-      mouse = "a";
-      completeopt = "menuone,noselect";
-    };
-
-    keymaps = [
-      # {
-      #   mode = "n";
-      #   key = "<C-'>";
-      #   options.silent = true;
-      #   # action = "\\"vyiw:%s/v/v/g<Left><Left>";
-      # }
-      {
-        mode = "n";
-        key = "<leader>z";
-        options.silent = true;
-        action = "zfip";
-      }
-      {
-        mode = "n";
-        key = "U";
-        options.silent = true;
-        action = "<C-r>";
-      }
-      {
-        mode = "n";
-        key = "<leader>r";
-        options.silent = true;
-        action = ":!vimrunner <C-r>% & disown<CR><CR>";
-      }
-      {
-        mode = "n";
-        key = "<leader>k";
-        options.silent = true;
-        action = ":bn";
-      }
-      {
-        mode = "n";
-        key = "<leader>j";
-        options.silent = true;
-        action = ":bp";
-      }
-      {
-        mode = "n";
-        key = "<leader>o";
-        options.silent = true;
-        action = ":Telescope find_files";
-      }
-    ];
-    autoCmd = [
-      {
-        event = "BufWinLeave";
-        pattern = "*.*";
-        command = "mkview";
-      }
-      {
-        event = "BufWinEnter";
-        pattern = "*.*";
-        command = "silent! loadview";
-      }
-    ];
-
-    plugins = {
-      lualine.enable = true;
-      bufferline.enable = true;
-      auto-save.enable = true;
-      commentary.enable = true;
-      surround.enable = true;
-      nvim-autopairs.enable = true;
-      which-key.enable = true;
-      noice.enable = true;
-      rainbow-delimiters.enable = true;
-      nvim-tree.enable = true;
-      telescope = {
-        enable = true;
-        keymaps = {
-          "<leader>f" = "find_files";
-          "<leader>g" = "live_grep";
-        };
-      };
-      oil.enable = true;
-      treesitter.enable = true;
-      luasnip.enable = true;
-      lsp = {
-        enable = true;
-        servers = {
-          tsserver.enable = true;
-          lua-ls.enable = true;
-          # rust-analyzer.enable = true;
-        };
-      };
-      nvim-cmp = {
-        enable = true;
-        autoEnableSources = true;
-        sources = [
-          {name = "nvim_lsp";}
-          {name = "path";}
-          {name = "buffer";}
-        ];
-        mapping = {
-          "<CR>" = "cmp.mapping.confirm({ select = true })";
-          "<Tab>" = {
-            action = ''
-              function(fallback)
-                if cmp.visible() then
-                  cmp.select_next_item()
-                elseif luasnip.expandable() then
-                  luasnip.expand()
-                elseif luasnip.expand_or_jumpable() then
-                  luasnip.expand_or_jump()
-                elseif check_backspace() then
-                  fallback()
-                else
-                  fallback()
-                end
-              end
-            '';
-            modes = ["i" "s"];
-          };
-        };
-      };
-    };
-  };
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true;
