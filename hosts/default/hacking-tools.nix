@@ -560,6 +560,7 @@
       xsubfind3r
 
       # Microsoft infrastructure and Windows-related tools, incl. SMB
+      powershell
       bloodhound-py
       chainsaw
       certipy
