@@ -13,7 +13,7 @@
     ./hacking-tools.nix
     ./nixvim.nix
     ./main-user.nix
-    inputs.nixvim.nixosModules.nixvim
+    # inputs.nixvim.nixosModules.nixvim
     inputs.home-manager.nixosModules.default
   ];
 
