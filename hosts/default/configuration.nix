@@ -23,6 +23,8 @@
   boot.initrd.systemd.enable = true;
   boot.plymouth.enable = true;
   boot.plymouth.theme = "bgrt";
+
+  # Doesnt  seem to work :(
   # boot.plymouth.logo = "/etc/nixos/nix-os/plymouth/images.jpg";
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
