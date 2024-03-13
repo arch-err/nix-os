@@ -89,6 +89,7 @@
   main-user.userName = "archerr";
 
   hacking-tools.enable = true;
+  nixvim.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
