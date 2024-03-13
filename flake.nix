@@ -19,7 +19,6 @@
       # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    ags.url = "github:Aylur/ags";
   };
 
   outputs = {
