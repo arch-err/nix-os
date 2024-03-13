@@ -82,19 +82,19 @@
   #   # Optional
   #   # Whether to enable hyprland-session.target on hyprland startup
   #   systemd.enable = true;
-  # };
-  wayland.windowManager.hyprland = {
-    enable = true;
-    # ...
-    plugins = [
-      inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
-      # ...
-    ];
+  # # };
+  # wayland.windowManager.hyprland = {
+  #   enable = true;
+  #   # ...
+  #   plugins = [
+  #     inputs.hyprland-plugins.packages.${pkgs.system}.hyprbars
+  #     # ...
+  #   ];
 
-    extraConfig = ''
-      ${builtins.readFile ./dotfiles/hypr/hyprland.conf}
-    '';
-  };
+  #   extraConfig = ''
+  #     ${builtins.readFile ./dotfiles/hypr/hyprland.conf}
+  #   '';
+  # };
 
   home.sessionVariables = {
     BROWSER = "floorp";

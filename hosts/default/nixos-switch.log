@@ -2,26 +2,3 @@ activating the configuration...
 setting up /etc...
 reloading user units for archerr...
 restarting sysinit-reactivation.target
-restarting the following units: home-manager-archerr.service
-[0;1;31mJob for home-manager-archerr.service failed because the control process exited with error code.[0m
-[0;1;31mSee "systemctl status home-manager-archerr.service" and "journalctl -xeu home-manager-archerr.service" for details.[0m
-warning: the following units failed: home-manager-archerr.service
-
-[0;1;31m×[0m home-manager-archerr.service - Home Manager environment for archerr
-     Loaded: loaded (]8;;file://zpctr/etc/systemd/system/home-manager-archerr.service/etc/systemd/system/home-manager-archerr.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
-     Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2024-03-13 12:17:25 CET; 58ms ago
-   Duration: 1h 10min 52.999s
-    Process: 41078 ExecStart=/nix/store/0l615v39ak6wbnsi1zlmv88xz5grwvn9-hm-setup-env /nix/store/n1jnvzji17ha2s5lhzwax3rb5fdmg62d-home-manager-generation [0;1;31m(code=exited, status=1/FAILURE)[0m
-   Main PID: 41078 (code=exited, status=1/FAILURE)
-         IP: 0B in, 0B out
-        CPU: 106ms
-
-mar 13 12:17:25 zpctr systemd[1]: Starting Home Manager environment for archerr...
-mar 13 12:17:25 zpctr hm-activate-archerr[41078]: Starting Home Manager activation
-mar 13 12:17:25 zpctr hm-activate-archerr[41078]: Activating checkFilesChanged
-mar 13 12:17:25 zpctr hm-activate-archerr[41078]: Activating checkLinkTargets
-mar 13 12:17:25 zpctr hm-activate-archerr[41194]: Existing file '/home/archerr/.config/hypr/hyprland.conf' is in the way of '/nix/store/ilgabydw7x5ql8fll8msdwwcm08vfzsr-home-manager-files/.config/hypr/hyprland.conf'
-mar 13 12:17:25 zpctr hm-activate-archerr[41194]: Please move the above files and try again or use 'home-manager switch -b backup' to back up existing files automatically.
-mar 13 12:17:25 zpctr systemd[1]: [0;1;39m[0;1;31m[0;1;39mhome-manager-archerr.service: Main process exited, code=exited, status=1/FAILURE[0m
-mar 13 12:17:25 zpctr systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mhome-manager-archerr.service: Failed with result 'exit-code'.[0m
-mar 13 12:17:25 zpctr systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Home Manager environment for archerr.[0m
