@@ -143,6 +143,7 @@
     rustc
     nodejs
     python3Full
+    pipx
     qemu
     virt-manager
     gnumake
