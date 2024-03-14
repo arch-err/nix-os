@@ -143,6 +143,7 @@
     rustc
     nodejs
     python3Full
+    python312Packages.pip
     pipx
     qemu
     virt-manager
