@@ -67,12 +67,14 @@
         };
 
         keymaps = [
-          # {
-          #   mode = "n";
-          #   key = "<C-'>";
-          #   options.silent = true;
-          #   # action = "\\"vyiw:%s/v/v/g<Left><Left>";
-          # }
+          {
+            mode = "n";
+            key = "<C-'>";
+            options.silent = true;
+            action = ''
+              "vyiw:%s/v/v/g<Left><Left>
+            '';
+          }
           {
             mode = "n";
             key = "<leader>z";
@@ -148,7 +150,6 @@
           treesitter.enable = true;
           luasnip.enable = true;
           emmet.enable = true;
-          # gitgutter.enable = true;
           nvim-colorizer.enable = true;
           lsp = {
             enable = true;
@@ -179,22 +180,6 @@
             ];
             mapping = {
               "<CR>" = "cmp.mapping.confirm({ select = true })";
-              "<Tab>" = {
-                action = ''
-                  function(fallback)
-                    if cmp.visible() then
-                      cmp.select_next_item()
-                    elseif luasnip.expandable() then
-                      luasnip.expand()
-                    elseif luasnip.expand_or_jumpable() then
-                      luasnip.expand_or_jump()
-                    elseif check_backspace() then
-                      fallback()
-                    else
-                      fallback()
-                    end
-                  end
-                '';
                 modes = ["i" "s"];
               };
             };
