@@ -148,7 +148,7 @@
           treesitter.enable = true;
           luasnip.enable = true;
           emmet.enable = true;
-          gitgutter.enable = true;
+          # gitgutter.enable = true;
           nvim-colorizer.enable = true;
           lsp = {
             enable = true;
