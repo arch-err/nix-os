@@ -180,8 +180,7 @@
             ];
             mapping = {
               "<CR>" = "cmp.mapping.confirm({ select = true })";
-                modes = ["i" "s"];
-              };
+              modes = ["i" "s"];
             };
           };
         };
