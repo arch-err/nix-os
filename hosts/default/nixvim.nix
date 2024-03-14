@@ -152,6 +152,17 @@
             servers = {
               tsserver.enable = true;
               lua-ls.enable = true;
+              bashls.enable = true;
+              pylsp.enable = true;
+              pylyzer.enable = true;
+              phpactor.enable = true;
+
+              cssls.enable = true;
+              jsonls.enable = true;
+
+              helm-ls.enable = true;
+              dockerls.enable = true;
+              yamlls.enable = true;
               # rust-analyzer.enable = true;
             };
           };
