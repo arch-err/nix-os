@@ -96,6 +96,13 @@
   #   '';
   # };
 
+  dconf.settings = {
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = ["qemu:///system"];
+      uris = ["qemu:///system"];
+    };
+  };
+
   home.sessionVariables = {
     BROWSER = "floorp";
     SEC_BROWSER = "firefox";
