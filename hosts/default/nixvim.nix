@@ -151,7 +151,6 @@
           luasnip.enable = true;
           emmet.enable = true;
           nvim-colorizer.enable = true;
-          clipboard-image.enable = true;
           lsp = {
             enable = true;
             servers = {
