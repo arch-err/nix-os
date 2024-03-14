@@ -154,7 +154,7 @@
               lua-ls.enable = true;
               bashls.enable = true;
               pylsp.enable = true;
-              pylyzer.enable = true;
+              # pylyzer.enable = true;
               phpactor.enable = true;
 
               cssls.enable = true;
