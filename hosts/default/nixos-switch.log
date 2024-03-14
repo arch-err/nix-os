@@ -1,5 +1,9 @@
+stopping the following units: systemd-modules-load.service
 activating the configuration...
 setting up /etc...
 reloading user units for archerr...
 restarting sysinit-reactivation.target
-the following new units were started: sysinit-reactivation.target, systemd-ask-password-console.path, systemd-tmpfiles-resetup.service
+reloading the following units: dbus.service
+restarting the following units: polkit.service
+starting the following units: systemd-modules-load.service
+the following new units were started: libvirt-guests.service, libvirtd-admin.socket, libvirtd-ro.socket, libvirtd.service, libvirtd.socket, machine.slice, sysinit-reactivation.target, systemd-ask-password-console.path, systemd-machined.service, systemd-tmpfiles-resetup.service, virt-guest-shutdown.target, virtlockd.socket, virtlogd.socket

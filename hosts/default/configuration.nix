@@ -24,7 +24,7 @@
   boot.plymouth.enable = true;
   boot.plymouth.theme = "bgrt";
 
-  # Doesnt  seem to work :(
+  # Doesnt seem to work :(
   # boot.plymouth.logo = "/etc/nixos/nix-os/plymouth/images.jpg";
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
@@ -193,6 +193,9 @@
     enable = true;
     setSocketVariable = true;
   };
+
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
