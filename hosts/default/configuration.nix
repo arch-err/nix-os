@@ -145,7 +145,7 @@
     python3Full
     python312Packages.pip
     pipx
-    gsettings
+    glib
     qemu
     virt-manager
     gnumake
